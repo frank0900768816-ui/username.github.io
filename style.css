@@ -1,0 +1,161 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #f5f5f5;
+}
+
+.header {
+  background: linear-gradient(to right, #3a3a3a, #6b6b6b);
+  color: white;
+  padding: 40px;
+  text-align: center;
+}
+
+.profile-img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 5px solid #b5c99a;
+  object-fit: cover;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.slogan {
+  color: #b5c99a;
+}
+
+.contact a {
+  color: white;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  padding: 40px;
+}
+
+.section {
+  margin-bottom: 40px;
+}
+
+.section h2 {
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.bottom {
+  display: flex;
+  gap: 40px;
+}
+
+.left { flex: 2; }
+.right { flex: 1; }
+
+.experience {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.exp-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  padding: 20px;
+}
+
+.date {
+  color: #888;
+  font-size: 14px;
+}
+
+.exp-content a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #3a8dde;
+}
+
+.preview {
+  position: relative;
+  margin-top: 15px;
+}
+
+.preview-img {
+  width: fit-content;
+  height: auto;
+  max-width: 100%;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.preview-img img {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: contain;
+  display: none;
+}
+
+.preview-img img.active {
+  display: block;
+}
+
+.preview-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  
+  left: 310px;
+  
+  background: white;
+  border: none;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.single-img {
+  width: 300px;
+  margin-top: 15px;
+  border-radius: 10px;
+  display: block;
+}
+
+.certificates {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cert-circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 4px solid #b5c99a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: white;
+}
+
+.skills {
+  display: flex;
+  justify-content: space-between;
+}
+
+.circle {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 8px solid #b5c99a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

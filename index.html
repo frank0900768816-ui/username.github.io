@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<title>個人履歷</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="header">
+  <img src="image/profile.jpg" class="profile-img">
+  <h1>馮輝帆</h1>
+  <p class="slogan">We Can't Control What Happens To Us, Only How It Affects Us And The Choices We Make</p>
+
+  <div class="contact">
+    <a href="mailto:frank0900768816@gmail.com">寄信給我</a><br>
+    <a href="https://www.instagram.com/frankfeng0113" target="_blank">📸 我的IG</a>
+    <p>0900-768-816</p>
+  </div>
+</div>
+
+<div class="container">
+
+<div class="section">
+<h2>ABOUT ME</h2>
+<p>
+  對我來說，跟人相處最重要的是尊重，所以我會先聽別人說什麼，不急著表達自己，也不會在情緒上來的時候講話。這樣的個性讓我比較能理解別人，也讓身邊的人跟我相處起來比較自在。
+  平常我很喜歡做甜點，從準備到完成的過程對我來說很療癒，也讓我變得更有耐心。看到別人吃得開心，我也很有成就感。另外我也喜歡魔術，因為它可以帶給人驚喜，也讓我訓練觀察力跟表達能力。
+  
+</p>
+</div>
+
+<div class="bottom">
+
+<div class="left">
+<div class="section">
+<h2>EXPERIENCE</h2>
+
+<div class="experience">
+
+<div class="exp-card">
+<div class="exp-content">
+<h3>UBike 調度系統專案</h3>
+<p class="date">資訊管理課程專案</p>
+<p>這是資訊管理課程小組所做的專案，大家分工明確，有人上網找案例、有人負責爬蟲、也有人負責隱藏利害關係人分析等，每個禮拜都會開會討論，如果有人遇到困難會給予建議或是幫助，大家也會互相檢查其他人負責的部分有沒有可以改善的地方，我是大二加選進這個大三的課程，一開始的確很吃力，但幸虧組員的支持與幫我讓我慢慢跟上進度，也在過程中學到了很多實務上的經驗。不只是技術層面，像是資料蒐集、分析方法，還有團隊合作與溝通能力都有明顯的提升。(目前是專案的階段1)</p>
+<a href="UBike.pdf" target="_blank">📄 查看報告</a>
+
+<div class="preview">
+<div class="preview-img">
+<img src="image/UBike1.jpg" class="active">
+<img src="image/UBike2.jpg">
+<img src="image/UBike3.jpg">
+</div>
+<button class="preview-next">&#10095;</button>
+</div>
+
+</div>
+</div>
+
+<div class="exp-card">
+<div class="exp-content">
+<h3>中原魔夜</h3>
+<p class="date">社團活動</p>
+<p>這是我大一時的魔術社成發，雖然程序跟手法都已經練到變成肌肉記憶了，但是實際上台的時候還是非常緊張，一路上也認識了許多志同道合的同伴，活動前的各種確認、彩排、活動當天都離不開他們的幫助。</p>
+
+<img src="image/magic.jpg" class="single-img">
+
+</div>
+</div>
+
+<!-- SDGs -->
+<div class="exp-card">
+<div class="exp-content">
+<h3>SDGs 英文報告</h3>
+<p class="date">課程專案</p>
+<p>我們sdgs報告有跟外籍學生一組，所以不只報告時，平常的交流與討論也是以英文來溝通，我很容易因為緊張就說得不太順暢，但其他的組員害是耐心地了解我想表達的東西，隨著時間過去我們基本上沒什麼交流的問題了，我想有部分原因是平常練習的對話很有用，另一部分應蓋就是我們培養出的默契了。</p>
+<a href="SDGs.pdf" target="_blank">📄 查看報告</a>
+
+<div class="preview">
+<div class="preview-img">
+<img src="image/SDGs1.jpg" class="active">
+<img src="image/SDGs2.jpg">
+<img src="image/SDGs3.jpg">
+</div>
+<button class="preview-next">&#10095;</button>
+</div>
+
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
+<div class="right">
+
+<div class="section">
+<h2>CERTIFICATES</h2>
+<div class="certificates">
+<div class="cert-circle"><p>多益</p><span>755</span></div>
+<div class="cert-circle"><p>培力英檢</p><span>B1</span></div>
+<div class="cert-circle"><p>商業英檢</p><span>Level 4</span></div>
+</div>
+</div>
+
+<div class="section">
+<h2>SKILLS</h2>
+<div class="skills">
+<div class="circle">90%</div>
+<div class="circle">85%</div>
+<div class="circle">75%</div>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+<script>
+document.querySelectorAll(".preview").forEach(preview => {
+  const images = preview.querySelectorAll("img");
+  let index = 0;
+
+  preview.querySelector(".preview-next").onclick = () => {
+    images[index].classList.remove("active");
+    index = (index + 1) % images.length;
+    images[index].classList.add("active");
+  };
+});
+</script>
+
+</body>
+</html>
