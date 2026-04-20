@@ -159,3 +159,11 @@ body {
   align-items: center;
   justify-content: center;
 }
+.skill {
+  text-align: center;
+}
+
+.skill p {
+  margin-top: 8px;
+  font-size: 14px;
+}
