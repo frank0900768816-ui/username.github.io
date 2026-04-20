@@ -156,11 +156,3 @@ body {
 .contact a:hover {
   text-decoration: underline;
 }
-.contact a {
-  color: white;
-  text-decoration: none;
-}
-
-.contact a:hover {
-  text-decoration: underline;
-}
